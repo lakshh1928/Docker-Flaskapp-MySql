@@ -1,29 +1,22 @@
-# Flask MySQL Connection Project
+🐳 Two-Tier Flask + MySQL App
 
-This project demonstrates a simple **Flask** web application that connects to a **MySQL** database.  
-The application allows users to send messages, which are stored in the MySQL database.  
-Both the Flask app and MySQL database run in separate **Docker containers** on the same network.
+This project runs a Flask web app and a MySQL database in separate Docker containers on the same network.
 
----
+🧩 Requirements:
 
-## 🚀 Features
+Docker installed
 
-- 🧩 Simple Flask app that allows users to add messages  
-- 💾 Messages are stored in a MySQL database  
-- 🐳 Flask app and MySQL database run on the same Docker network  
+A Docker network named "lakshya"
+(create one using: docker network create lakshya)
 
----
+MySQL container image
+(pull it using: docker pull mysql:latest)
 
-## 🧰 Prerequisites
+⚙️ Setup:
 
-Make sure you have the following installed:
+1 Dockerfile → for the Flask app
 
-- [Docker](https://www.docker.com/) (for running containers)  
-- [Python 3.x](https://www.python.org/) (for developing or testing the Flask app locally)  
-- [MySQL](https://www.mysql.com/) (runs inside a Docker container)  
+1 docker-compose.yml → to manage both containers
 
----
-
-## ⚙️ Project Structure (Example)
-
-
+🙌 Credits:
+Thanks to "Train with Shubham" for the inspiration!
